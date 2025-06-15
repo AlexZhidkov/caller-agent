@@ -6,43 +6,48 @@ import CardContent from "@mui/material/CardContent";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 
-const bull = (
-  <Box
-    component="span"
-    sx={{ display: "inline-block", mx: "2px", transform: "scale(0.8)" }}
-  >
-    •
-  </Box>
-);
-
-const card = (
-  <React.Fragment>
-    <CardContent>
-      <Typography gutterBottom sx={{ color: "text.secondary", fontSize: 14 }}>
-        Word of the Day
-      </Typography>
-      <Typography variant="h5" component="div">
-        be{bull}nev{bull}o{bull}lent
-      </Typography>
-      <Typography sx={{ color: "text.secondary", mb: 1.5 }}>
-        adjective
-      </Typography>
-      <Typography variant="body2">
-        well meaning and kindly.
-        <br />
-        {'"a benevolent smile"'}
-      </Typography>
-    </CardContent>
-    <CardActions>
-      <Button size="small">Learn More</Button>
-    </CardActions>
-  </React.Fragment>
-);
-
-export default function OutlinedCard() {
+export default function InfoPage() {
   return (
-    <Box sx={{ minWidth: 275 }}>
-      <Card variant="outlined">{card}</Card>
+    <Box sx={{ minWidth: 320, maxWidth: 600, mx: "auto", textAlign: "left" }}>
+      <Card variant="outlined">
+        <CardContent>
+          <Typography variant="h5" component="div" gutterBottom>
+            Conversational AI Agents for Your Business
+          </Typography>
+          <Typography sx={{ color: "text.secondary", mb: 1.5 }}>
+            Enhance your customer experience with intelligent automation
+          </Typography>
+          <Typography variant="body2" sx={{ mb: 2 }}>
+            We offer custom conversational AI agents that can be seamlessly
+            integrated into your business website or phone system.
+            <ul>
+              Our AI agents can:
+              <li>Engage website visitors and answer their questions 24/7</li>
+              <li>Handle incoming phone calls and provide instant support</li>
+              <li>
+                Make outgoing calls to assist with sales, reminders, or customer
+                follow-ups
+              </li>
+              <li>
+                Automate routine tasks and free up your team for higher-value
+                work
+              </li>
+            </ul>
+            Let us help you boost efficiency, improve customer satisfaction, and
+            grow your business with state-of-the-art AI solutions.
+          </Typography>
+        </CardContent>
+        <CardActions>
+          <Button
+            size="large"
+            variant="contained"
+            color="primary"
+            href="mailto:azhidkov@gmail.com?subject=Conversational%20AI%20Agent%20Inquiry"
+          >
+            Contact Us
+          </Button>
+        </CardActions>
+      </Card>
     </Box>
   );
 }
