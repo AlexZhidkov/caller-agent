@@ -17,25 +17,22 @@ export default function InfoPage() {
           <Typography sx={{ color: "text.secondary", mb: 1.5 }}>
             Enhance your customer experience with intelligent automation
           </Typography>
-          <Typography variant="body2" sx={{ mb: 2 }}>
-            We offer custom conversational AI agents that can be seamlessly
-            integrated into your business website or phone system.
-            <ul>
-              Our AI agents can:
-              <li>Engage website visitors and answer their questions 24/7</li>
-              <li>Handle incoming phone calls and provide instant support</li>
-              <li>
-                Make outgoing calls to assist with sales, reminders, or customer
-                follow-ups
-              </li>
-              <li>
-                Automate routine tasks and free up your team for higher-value
-                work
-              </li>
-            </ul>
-            Let us help you boost efficiency, improve customer satisfaction, and
-            grow your business with state-of-the-art AI solutions.
-          </Typography>
+          We offer custom conversational AI agents that can be seamlessly
+          integrated into your business website or phone system.
+          <ul>
+            Our AI agents can:
+            <li>Engage website visitors and answer their questions 24/7</li>
+            <li>Handle incoming phone calls and provide instant support</li>
+            <li>
+              Make outgoing calls to assist with sales, reminders, or customer
+              follow-ups
+            </li>
+            <li>
+              Automate routine tasks and free up your team for higher-value work
+            </li>
+          </ul>
+          Let us help you boost efficiency, improve customer satisfaction, and
+          grow your business with state-of-the-art AI solutions.
         </CardContent>
         <CardActions>
           <Button

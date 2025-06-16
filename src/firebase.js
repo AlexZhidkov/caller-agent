@@ -8,7 +8,7 @@ import {
 } from "firebase/functions";
 import { getFirestore } from "firebase/firestore";
 
-import { config } from "config";
+import { config } from "./config";
 
 const firebaseConfig = {
   apiKey: config.FIREBASE_API_KEY,
