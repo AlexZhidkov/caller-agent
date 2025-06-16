@@ -13,8 +13,8 @@ import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
 import PhoneIcon from "@mui/icons-material/Phone";
 
-const pages = ["Demo", "About"];
-const settings = ["Demo", "About"];
+const pages = ["Demo", "Blog", "About"];
+const settings = ["Log Out"];
 
 function ResponsiveAppBar() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -85,11 +85,18 @@ function ResponsiveAppBar() {
               onClose={handleCloseNavMenu}
               sx={{ display: { xs: "block", md: "none" } }}
             >
-              {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography sx={{ textAlign: "center" }}>{page}</Typography>
-                </MenuItem>
-              ))}
+              <MenuItem key="demo" onClick={handleCloseNavMenu}>
+                <Typography sx={{ textAlign: "center" }}>Demo</Typography>
+              </MenuItem>
+              <MenuItem
+                key="blog"
+                onClick={() => {
+                  window.open("https://elevenlabs.io/blog", "_blank");
+                  handleCloseNavMenu();
+                }}
+              >
+                <Typography sx={{ textAlign: "center" }}>Blog</Typography>
+              </MenuItem>
             </Menu>
           </Box>
           <PhoneIcon sx={{ display: { xs: "flex", md: "none" }, mr: 1 }} />
@@ -112,15 +119,23 @@ function ResponsiveAppBar() {
             Caller Agent
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
-            {pages.map((page) => (
-              <Button
-                key={page}
-                onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: "white", display: "block" }}
-              >
-                {page}
-              </Button>
-            ))}
+            <Button
+              key="demo"
+              onClick={handleCloseNavMenu}
+              sx={{ my: 2, color: "white", display: "block" }}
+            >
+              Demo
+            </Button>
+            <Button
+              key="blog"
+              onClick={() => {
+                window.open("https://elevenlabs.io/blog", "_blank");
+                handleCloseNavMenu();
+              }}
+              sx={{ my: 2, color: "white", display: "block" }}
+            >
+              Blog
+            </Button>
           </Box>
           <Button color="inherit">Login</Button>
 

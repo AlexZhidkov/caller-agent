@@ -17,8 +17,16 @@ export default function InfoPage() {
           <Typography sx={{ color: "text.secondary", mb: 1.5 }}>
             Enhance your customer experience with intelligent automation
           </Typography>
-          We offer custom conversational AI agents that can be seamlessly
-          integrated into your business website or phone system.
+          We offer custom conversational AI agents powered by{" "}
+          <a
+            href="https://elevenlabs.io"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            ElevenLabs
+          </a>{" "}
+          that can be seamlessly integrated into your business website or phone
+          system.
           <ul>
             Our AI agents can:
             <li>Engage website visitors and answer their questions 24/7</li>
